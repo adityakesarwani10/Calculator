@@ -63,9 +63,11 @@ const calculate = () => {
             result = prevres % curres;
             break;
     }
+    result = parseFloat(result.toFixed(5));
+
     curr = result.toString();
-    prev = curr;
-    curr = '';
+    operation = null;
+    prev = '';
     updateDisplay();
 }
 const updateDisplay = () => {
