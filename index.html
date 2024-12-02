@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name= "viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container"> 
+        <div class="Calculator">
+            <div id="display"></div>
+            
+            <div class="main">
+                <div class="line" id="line1">
+                    <button class="btn col-btn"  id="clear" onclick="clearDisplay()">AC</button>
+                    <button class="btn col-btn" id="del" onclick="clearDisplay1()">Del</button>
+                    <button class="btn col-btn" id="percent" onclick="chooseOperation('%')">%</button>
+                    <button class="btn col-btn" id="divide" onclick="chooseOperation('/')">/</button>
+                </div>
+                <br>
+                <div class="line" id="line2">
+                    <button class="btn" onclick="appendNumber('7')" id="seven">7</button>
+                    <button class="btn" onclick="appendNumber('8')" id="eight">8</button>
+                    <button class="btn" onclick="appendNumber('9')" id="nine">9</button>
+                    <button class="btn col-btn" id="multiply" onclick="chooseOperation('*')">X</button>
+                </div><br>
+                
+                <div class="line" id="line3">
+                    <button class="btn" onclick="appendNumber('4')" id="four">4</button>
+                    <button class="btn" onclick="appendNumber('5')"  id="five">5</button>
+                    <button class="btn" onclick="appendNumber('6')" id="six">6</button>
+                    <button class="btn col-btn" id="minus" onclick="chooseOperation('-')">-</button>
+                </div><br>
+        
+                <div class="line" id="line4">
+                    <button class="btn" onclick="appendNumber('1')" id="one">1</button>
+                    <button class="btn" onclick="appendNumber('2')" id="two">2</button>
+                    <button class="btn" onclick="appendNumber('3')" id="three">3</button>
+                    <button class="btn col-btn" id="plus" onclick="chooseOperation('+')">+</button>
+                </div><br>
+        
+                <div class="line5">
+                    <button class="btn" onclick="appendNumber('0')" id="zero">0</button>
+                    <button class="btn" onclick="appendNumber('.')" id="decimal">.</button>
+                    <button class="btn col-btn" id="equal" onclick="calculate()">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
